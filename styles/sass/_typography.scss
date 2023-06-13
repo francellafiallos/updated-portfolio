@@ -1,0 +1,40 @@
+@use './variables.scss' as v;
+
+html {
+    font-family: v.$primary-font;
+    font-size: 125%;
+}
+
+p {
+    font-size: 0.75rem;
+}
+
+h1 {
+    font-family: v.$secondary-font;
+    font-size: 3rem;
+    margin: 0 auto;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-family: v.$secondary-font;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px #4300f9;
+    letter-spacing: 5.25px;
+}
+
+h3 {
+    font-family: v.$primary-font;
+    font-size: 1.5rem;
+    
+}
+
+h4 {
+    font-family: v.$primary-font;
+}
+
+h5 {
+    font-family: v.$primary-font;
+    font-weight: lighter;
+    text-transform: uppercase;
+}

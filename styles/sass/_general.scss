@@ -1,0 +1,32 @@
+@use './variables' as v;
+
+ul {
+    list-style: none;;
+}
+
+.wrapper {
+    width: 1280px; 
+    width: 60%;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: #4300f9;
+    width: 150px;
+    border-radius: 25px;
+    p {
+        font-family: v.$primary-font;
+        text-align: center;
+        font-weight: bold;
+        a {
+            text-align: center;
+            text-decoration: none;
+            font-family: v.$primary-font;
+            color: whitesmoke;
+            letter-spacing: 2px;
+        }
+        // a:visited {
+        //     color: v.$primary-font-color;
+        // }
+    }
+}

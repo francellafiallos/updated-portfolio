@@ -1,0 +1,99 @@
+@use './variables.scss' as v;
+
+.skills {
+    background-color: v.$secondary-color;
+    padding-bottom: 50px;
+    .text-container {
+        text-align: center;
+        padding-top: 50px;
+        .skills-list {
+            padding-left: 0px; 
+            display: grid;
+            grid-auto-rows: 33% 33% 33%;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%/2, max(150px, 100%/4)), 1fr));
+            row-gap: 25px;
+            margin: 0 0 100px 0;
+            li {
+                display: flex;
+                flex-direction: column;
+                font-family: v.$primary-font;
+                letter-spacing: 2px;
+            }
+            li i {
+                font-size: clamp(2.5rem, 1.8608rem + 3.196vw, 5.3125rem);
+                color: #14004b;
+            }
+            li i:focus {
+                outline: gainsboro;
+            }
+        }
+        .other-skills-accordion {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            .panel ul li {
+                list-style: disc;
+                text-align: left;
+                font-family: v.$primary-font;
+                letter-spacing: 4px;
+                line-height: 30px;
+            }
+            .accordion {
+                background-color: v.$secondary-color;
+                letter-spacing: 4px;
+                // line-height: 15px;
+                font-family: v.$primary-font;
+                color: black;
+                cursor: pointer;
+                padding: 0px;
+                width: 100%;
+                text-align: center;
+                border: none;
+                outline: none;
+                transition: 0.4s;     
+                .skills-title-container {
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .skills-title-container i {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .skills-title-container .skill-container {
+                    width: 100%;
+                }
+                .skills-title-container .skil-container h4 {
+                    margin: 0;
+                }
+            }
+            .active, .accordion:hover {
+                background-color: white;
+              }
+
+            .active, .accordion:focus {
+                background-color: white;
+            }
+    
+              .panel {
+                padding: 0 18px;
+                background-color: v.$secondary-color;
+                display: none;
+                overflow: hidden;
+              }
+        }
+        
+    }
+}
+
+
+@media (max-width: 360px) {
+   .skills .skills-wrapper .wrapper .text-container .skills-list-container .skills-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .skills .skills-wrapper .wrapper {
+        width: 90%;
+    }
+}

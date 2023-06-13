@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francella Fiallos</title>
+    <link rel="stylesheet" href="./styles/style.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/907b85b0a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <main>
+        <section class="header">
+            <header>
+                <div class="header-wrapper">
+                    <div class="nav-wrapper">
+                        <div class="wrapper">
+                            <div class="nav-container">
+                                
+                                <!-- <nav> -->
+                                    
+                                    <div class="nav-items">
+                                        
+                                        <nav>
+                                            
+                                            <ul class="menu">
+                                                <li><a href="index.html" class="menu-item">home</a></li>
+                                                <li><a href="#about" class="menu-item">about</a></li>
+                                                <li><a href="#projects" class="menu-item">projects</a></li>
+                                                <li><a href="#contact" class="menu-item">contact</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    
+                                    
+                                    <!-- hamburger menu goes here! -->
+                                    
+                                    <div class="nav-icon">
+                                        <a href="#" class="icon"><i class="fa-solid fa-bars" alt="An icon representing a hamburger menu"></i></a>
+                                    </div>
+                                    
+                                    <!-- </nav> -->
+                                    
+                                </div>
+                                <div class="hero-container">
+                                    
+                                    <div class="hero-text-container">
+                                        <h1>
+                                            Francella Fiallos
+                                        </h1>
+                                        <h3>
+                                            <span>
+                                        front-end web developer
+                                        </span>
+                                        <span
+                                        class="text-rotate" data-period="2000" 
+                                        data-rotate='[ "and project manager", "and radio host", "and DJ", "and arts administrator" ]'>
+                                        </span>
+                                            </h3>
+                                        <div class="button-container">
+                                            <div class="button">
+                                                <p><a href="#contact">get in touch</a></p>
+                                            </div>
+                                     </div>
+                                </div>
+                        
+                    </div>
+                </div>
+            </header>
+        </section>
+
+        <section class="about-me" id="about">
+            <div class="about-me-wrapper">
+                <div class="wrapper">
+                    <div class="headshot-container">
+                        <img src="./assets/headshot.jpg" alt="A headshot of Francella Fiallos">
+                    </div>
+                        <div class="text-container">
+                            <h2>about me</h2>
+                            <p>Francella Fiallos (she/her) is a front-end web developer who made the switch to tech after a decade in the community broadcasting and arts non-profit sectors. Trained as a journalist, she brings an analytical and inquisitive lens to fast-paced environments in order to troubleshoot, solve problems, and manage complex projects.</p>
+                            <p>Outside of coding, she's a radio host, Polaris Music Prize juror, and board member for Debaser, an Ottawa/Gatineau DIY-arts organization.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills" id="skills">
+                <div class="skills-wrapper">
+                    
+                    <div class="wrapper">
+                        <div class="text-container">
+                            
+                            <h2>technical skills</h2>
+                            
+                            <div class="skills-list-container">
+                                <ul class="skills-list">
+                                    <li><i class="fa-brands fa-html5"></i>HTML5</li>
+                                    <li><i class="fab fa-css3-alt"></i>CSS3</li>
+                                    <li><i class="fab fa-sass"></i>SASS</li>
+                                    <li><i class="fa-brands fa-square-js"></i>JavaScript</li>
+                                    <li><i class="fa-brands fa-react"></i>React</li>
+                                    <li><i class="fa-sharp fa-solid fa-gears"></i>REST APIs</li>
+                                    <li><i class="fa-brands fa-git-alt"></i>Git</li>
+                                    <li><i class="fa-brands fa-github"></i>GitHub</li>
+                                    <li><i class="fa-solid fa-database"></i>Firebase</li>
+                                    <li><i class="fa-solid fa-mobile"></i>Responsive Design</li>
+                                    <li><i class="fa-solid fa-universal-access"></i>Accessibility</li>
+                                    <li><i class="fa-brands fa-slack"></i>Slack</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="other-skills">
+                                <h2>other skills and areas of expertise</h2>
+                                
+                                <div class="other-skills-accordion">
+                                    <button class="accordion">
+                                        <div class="skills-title-container" id="skill-one" onclick="accordionToggle('skill-one')">
+                                            <i class="fa-solid fa-plus"></i>
+                                            <div class="skill-container">
+                                                <h4>project management</h4>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <div class="panel">
+                                        <ul class="project-management-list">
+                                            <li>Obtained over $100,000 in grants and subsidies over two years</li>
+                                            <li>Executed and oversaw a three-part audio residency aimed at increasing climate change</li>
+                                            <li>Managed a $300,000+ budget</li>
+                                            <li>Led grassroots fundraising efforts and campaigns</li>
+                                        </ul>
+                                    </div>
+                                    <button class="accordion">
+                                        <div class="skills-title-container" id="skill-two" onclick="accordionToggle('skill-two')">
+                                            <i class="fa-solid fa-plus"></i>
+                                            <div class="skill-container">
+                                                <h4>leadership and governance</h4>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <div class="panel">
+                                        <ul class="leadership-list">
+                                            <li>Debaser</li>
+                                            <li>National Campus and Community Radio Association</li>
+                                            <li>CKDU 88.1 FM</li>
+                                            <li>Centre for Art Tapes</li>
+                                        </ul>
+                                    </div>
+                                    <button class="accordion">
+                                        <div class="skills-title-container" id="skill-three" onclick="accordionToggle('skill-three')">
+                                            <i class="fa-solid fa-plus"></i>
+                                            <div class="skill-container">
+                                                <h4>audio production</h4>
+                                            </div>
+                                            
+                                        </div>
+                                    </button>
+                                    <div class="panel">
+                                        <ul class="audio-production-list">
+                                            <li>Made podcasts for Kukukwes and Women in Film and Television-Atlantic</li>
+                                            <li>Currently produce a weekly music program showcasing the best in post-punk in Canada and beyond</li>
+                                            <li>Created limited audio documentary series on overlooked, obscure Canadian music</li>
+                                            <li>Collaborated with CBC Music on The Ten, a weekly music program highlighting the 2021 Polaris Music Prize shortlist</li>
+                                        </ul>
+                                    </div>
+                                    <button class="accordion">
+                                        <div class="skills-title-container" id="skill-four" onclick="accordionToggle('skill-four')">
+                                            <i class="fa-solid fa-plus"></i>
+                                                <div class="skill-container">
+                                                    <h4>professional affiliations</h4>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div class="panel">
+                                            <ul class="professional-list">
+                                                <li>Polaris Music Prize</li>
+                                                <li>ADISQ</li>
+                                                <li>Music Nova Scotia</li>
+                                                <li>Prism Prize/MVP Project</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+            </section>
+
+            <section class="projects" id="projects">
+                <div class="projects-wrapper">
+                    <div class="wrapper">  
+                        <h2>projects</h2>
+                        <div class="block-wrapper">
+                            
+                            <div class="project-block-right">
+                                
+                                <div class="project-block">
+                                    <div class="image">
+                                        <img src="./assets/Welcome to Organic.jpg" alt="A mock-up on a laptop of the Welcome to Organic site.">
+                                    </div>
+                                    
+                                    <div class="text-button-container">
+                                        
+                                        <div class="text">
+                                            <h4>Organic - E-commerce website</h4>
+                                            <h5>HTML, SCSS, JS</h5>
+                                            <p>Multi-page PSD conversion using HTML, SCSS, and vanilla JavaScript using brief and client files. Responsive across devices.</p>
+                                        </div>
+                                        <div class="button-container">
+                                            <div class="button">
+                                                <p><a href="https://project-two-welcome-to-organic.netlify.app/">View Live</a></p>
+                                            </div>
+                                            <div class="button">
+                                                <p><a href="https://github.com/Welcome-to-Organic-Project-2/Project-2.git">View Code</a></p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                             
+                            <div class="project-block-left">
+                                <div class="project-block">
+                                    <div class="image">
+                                        <img src="./assets/Welcome to Organic.jpg" alt="A mock-up on a laptop of the Welcome to Organic site.">
+                                    </div>
+                                    
+                                    <div class="text-button-container">
+                                        
+                                        <div class="text">
+                                            <h4>ObscYOUre - The ultimate music personality quiz</h4>
+                                            <h5>HTML, CSS, JS, React, API</h5>
+                                            <p>A fully-functioning, dynamic React app using a third-party API. Users complete a five-question form and are returned an obscure music genre based on their responses. Responsive across devices.</p>
+                                        </div>
+                                        <div class="button-container">
+                                            <div class="button">
+                                                <p><a href="">View Live</a></p>
+                                            </div>
+                                            <div class="button">
+                                                <p><a href="">View Code</a></p>
+                                            </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-block-right">
+                            
+                            <div class="project-block">
+                                <div class="image">
+                                    <img src="./assets/Welcome to Organic.jpg" alt="A mock-up on a laptop of the Welcome to Organic site.">
+                                </div>
+                                <div class="text-button-container">
+                                    
+                                    <div class="text">
+                                        <h4>The Film Factory</h4>
+                                        <h5>HTML, CSS, JS, React, API, Firebase</h5>
+                                        <p>Using a third-party API and a Firebase database, users can search English-language films they know and love and receive suggestions for foreign-language movies based on their search. Responsive across devices.</p>
+                                    </div>
+                                    <div class="button-container">
+                                        <div class="button">
+                                            <p><a href="">View Live</a></p>
+                                        </div>
+                                        <div class="button">
+                                            <p><a href="">View Code</a></p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="project-block-left">
+                            <div class="project-block">
+                                <div class="image">
+                                    <img src="./assets/Welcome to Organic.jpg" alt="A mock-up on a laptop of the Welcome to Organic site.">
+                                </div>
+                                <div class="text-button-container">
+                                    
+                                    <div class="text">
+                                        <h4>Organic - E-commerce website</h4>
+                                        <h5>HTML, SCSS, JS</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reprehenderit ullam voluptatibus aut tenetur nam doloribus quasi maiores?</p>
+                                    </div>
+                                    <div class="button-container">
+                                        <div class="button">
+                                            <p><a href="">View Live</a></p>
+                                        </div>
+                                        <div class="button">
+                                            <p><a href="">View Code</a></p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div> -->
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="audio-projects">
+            <div class="audio-projects-wrapper">
+                <div class="wrapper">
+                    <div class="text-container">
+                        <h2>audio projects</h2>
+                        <p>Here is where you can find my weekly radio show, Superconnected, which airs on CKCU 93.1FM in Ottawa, CJLO 1690AM in Montreal and CKDU 88.1FM in Halifax. Episodes are available on-demand on Mixcloud.</p>
+                    </div>
+                    
+                    <div class="audio-projects-block">
+                        
+                        <div class="audio-project-left">
+                            <div class="audio-project">
+                                <!-- <h4>Superconnected</h4> -->
+                                <iframe width="50%" height="400" src="https://www.mixcloud.com/widget/iframe/?light=1&feed=%2Ffrancellafiallos%2F" frameborder="0" alt="Francella as a baby with the text 'Listen to Superconnected on CJLO'"></iframe>
+                                <div class="audio-project-text">
+                                    <h4>Superconnected</h4>
+                                    <p>Superconnected is the weekly radio show I have produced since 2016 airing on CJLO 1690AM, CKDU 88.1FM, and CKCU 93.1FM. It is an eclectic program with a focus on guitar-driven, post-punk music and obscure classics from so-called Canada.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="audio-project-right">
+                            <div class="audio-project">
+                                <!-- <h4>CBC Music</h4> -->
+                                <img src="./assets/cbc-music-logo.jpg" alt="CBC Music logo." width=384px; />
+                                <div class="audio-project-text">
+                                    <h4>CBC Music</h4>
+                                    <p>The Ten is a one-hour weekly radio program on CBC Music. Each episode took an in-depth look at one of the 10 albums nominated for the 2021 Polaris Prize. I hosted two episodes that, respectively, focused on Leanne Betasamosake Simpson's Theory of Ice and Dominique Fils-Aimé's Three Little Words.</p>
+                                </div>                      
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contact" id="contact">
+            
+                <div class="contact-wrapper">
+                    <div class="wrapper">
+                        <h2>contact</h2>
+                        <div class="contact-icons-container">
+                            <ul class="contact-list">
+                                <li><a href="https://www.linkedin.com/in/francella-fiallos/"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://github.com/francellafiallos"><i class="fa-brands fa-github"></i></a></li>
+                                <li><a href="https://twitter.com/f_fiallos"><i class="fa-brands fa-twitter"></i></a></li>
+                                <!-- <li><a href=""><i class="fa-solid fa-envelope"></i></a></li> -->
+                            </ul>
+                        </div>
+                        <div class="text-container">
+                            <p>Please get in touch by sending an email or messaging her on Twitter.</p>
+                        </div>
+                        <div class="button-container">
+                            <div class="button">
+                                <p><a href="" id="contact-email">Email Francella</a></p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <div class="button">
+                                <p><a href="index.html" class="top-button">Back to the top</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer-wrapper">
+                    <p>Built in 2023 by Francella Fiallos.</p>
+                </div>
+            </footer>
+
+    </main>
+
+    <script>
+        let txtRotate = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    txtRotate.prototype.tick = function() {
+        let i = this.loopNum % this.toRotate.length;
+        let fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        let that = this;
+        let delta = 300 - Math.random() * 100;
+
+        if (this.isDeleting) {
+            delta /= 2;
+        }
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period; 
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+        }
+
+        setTimeout(function() {
+            that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        let elements = document.getElementsByClassName('text-rotate'); 
+        for (let i=0; i<elements.length; i++)
+        {
+            let toRotate = elements[i].getAttribute('data-rotate');
+            let period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+                new
+                txtRotate(elements[i], JSON.parse(toRotate),period);
+            }
+        }
+        const css = document.createElement("style");
+        css.type = "tex/css";
+        css.innerHTML = ".text-rotate > .wrap { border-right: 0.08em solid #666 }";
+
+        document.body.appendChild(css);
+    };
+
+    // credit to codepen - simple Typing Carousel
+
+    // accordion for skills
+
+    const acc = document.getElementsByClassName("accordion");
+    let i;
+    let myArray = document.querySelectorAll('.skills-title-container');
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("aorctive");
+
+        let panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
+ }
+
+ // credit to W3 schools for accordion
+
+ // following function for icon toggle done by me!
+
+ function accordionToggle(element) {
+    let myElement = document.getElementById(element);
+    myElement.children[0].classList.toggle("fa-plus");
+    myElement.children[0].classList.toggle("fa-minus");
+ }
+
+ // hamburger menu - credit to W3Schools
+
+ function classToggle () {
+    const menuItems = document.querySelectorAll('.menu-item');
+    menuItems.forEach(event => event.classList.toggle('nav-bar-toggle-show'));
+    document.querySelector('.nav-wrapper').classList.toggle('nav-large');
+    }
+
+    document.querySelector('.nav-icon')
+    .addEventListener('click', classToggle);
+
+
+    // email - credit to CSS Tricks
+
+    const encEmail = "ZnJhbmNlbGxhLmZpYWxsb3NAZ21haWwuY29t";
+    const form = document.getElementById("contact-email");
+    form.setAttribute("href", "mailto:".concat(atob(encEmail)));
+
+</script>
+    
+</body>
+</html>

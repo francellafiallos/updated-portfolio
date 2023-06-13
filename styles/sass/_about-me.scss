@@ -1,0 +1,26 @@
+@use './variables.scss' as v;
+
+.about-me {
+    padding: 50px 0 50px 0;
+    .about-me-wrapper .wrapper {
+        text-align: center;
+        .headshot-container {
+            width: 100%;
+            max-width: 360px;
+            margin: 0 auto;
+            img {
+                border-radius: 50%;
+            }
+        }
+        .text-container {
+            width: 100%;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        .text-container p {
+            font-size: 1rem;
+            letter-spacing: 2px;
+            line-height: 35px;
+        }
+    }
+}

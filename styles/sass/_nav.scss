@@ -1,0 +1,151 @@
+@use './variables.scss' as v;
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid v.$primary-color;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        li { 
+            display: flex;
+            justify-content: space-between;
+            font-family: v.$primary-font;
+            a {
+                text-decoration: none;
+                color: black;
+                position: relative;
+                letter-spacing: 2px;
+                font-size: 1.25rem;
+            a:visited {
+                    color: black;
+                }
+            }
+            a::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                border-radius: 2px;
+                background-color: v.$primary-color;
+                bottom: 0;
+                left: 0;
+                transform-origin: right;
+                transform: scaleX(0);
+                transition: transform 0.3s ease-in-out;
+            }
+            a:hover::before {
+                transform-origin: left;
+                transform: scaleX(1);
+            }
+            a:focus {
+                outline: v.$primary-color;
+            }
+        }
+    }
+    .nav-icon {
+        display: none;
+    }
+}
+
+// @media (max-width: 1024px) {
+//     nav,
+//     nav ul {
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     .menu-item {
+//         display: none;
+//     }
+// }
+
+@media (max-width: 1024px) {
+    .header-wrapper .nav-wrapper .wrapper .nav-container .nav-items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-wrapper .nav-wrapper .wrapper .nav-container .nav-items .menu {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav,
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    .menu-item {
+        display: none;
+    }
+    nav {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-wrapper .nav-wrapper .wrapper .nav-container .nav-items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-wrapper .nav-wrapper .wrapper .nav-container .nav-items .menu {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-icon a,
+    .nav-items a {
+        position: relative;
+        color: black;
+    }
+
+    .nav-icon a::before, 
+    .nav-items a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        border-radius: 2px;
+        background-color: v.$primary-color;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+    }
+
+
+    .nav-items a:hover::before,
+    .nav-icon a:hover::before,
+    .nav-items a:focus,
+    .nav-icon a:focus {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
+    .nav-icon a:visited {
+        color: black;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-bar-toggle-show {
+        display: flex;
+    }
+}

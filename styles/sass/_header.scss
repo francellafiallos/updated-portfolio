@@ -1,0 +1,115 @@
+@use './variables' as v; 
+
+.header {
+    height: 100vh;
+    background-image: url('../assets/ppheader(1).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    .hero-text-container {
+        max-width: 1000px;
+        max-height: 400px;
+        width: 100%;
+        height: 100%;
+        background-color: #ece6fe;
+        border: #4300f9 solid 2px;
+        border-radius: 1rem;
+        box-shadow: 5px 10px #4300f9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+            text-shadow: 1px 1px 1px #4300f9;
+            // font-size: 4vw;
+            font-size: clamp(1.75rem, 1.4489rem + 2.1307vw, 5rem);
+        }
+        .button-container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .button {
+            margin: 8px 0 0 0;
+            border-radius: 25px;
+        }
+        }
+    }
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    .nav-icon {
+        display: none;
+    }
+    .nav-items {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .menu {
+            display: flex;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-wrapper .nav-container .nav-icon {
+        display: block;
+        margin: 8px 0 0 0;
+    }
+}
+
+@media (max-width: 1024px) {
+   .main-header .nav-large {
+        height: 150px;
+    }
+}
+
+@media (max-width: 720px) {
+   .hero-container h1 {
+    font-size: clamp(1.75rem, 1.4489rem + 2.1307vw, 5rem);
+    }
+    h3 {
+        font-size: clamp(1.75rem, 1.4489rem + 2.1307vw, 1rem);
+    }
+}
+
+@media (max-width: 580px) {
+    .hero-container h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-container h3 {
+        font-size: 1.5rem;
+    }
+    .hero-container .hero-text-container {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-container h1 {
+        font-size: 1.75rem;
+    .hero-container h3 {
+        font-size: 1rem;
+    }
+    }
+}
+
+@media (max-width: 360px) {
+    .header-wrapper .nav-wrapper .wrapper {
+        width: 95%;
+    }
+}

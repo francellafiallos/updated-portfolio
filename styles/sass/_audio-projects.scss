@@ -1,0 +1,107 @@
+@use './variables' as v;
+
+.audio-projects {
+    background-color: whitesmoke;
+    padding: 50px 0 50px 0;
+    .text-container {
+    text-align: center;
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    }
+    .text-container p {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        line-height: 35px;
+    }
+}
+.audio-projects-block {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    .audio-project-left,
+    .audio-project-right {
+        width: 48%
+    }
+    .audio-project {
+        width: 100%;
+        max-width: 500px;
+        border: 2px solid v.$primary-color;
+        box-shadow: 5px 5px 0px v.$primary-color;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: white;
+        min-height: 620px;
+        max-height: 620px;
+        iframe {
+            width: 100%;
+            max-height: 300px;
+            max-width: 300px;
+        }
+        img {
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+}
+
+.audio-project-text {
+    p {
+        font-size: 0.8rem;
+        letter-spacing: 1.5px;
+    }
+    h4 {
+        font-size: 1.15rem;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 1700px) {
+
+}
+
+@media (max-width: 1280px) {
+.audio-projects .audio-projects-wrapper .wrapper .audio-projects-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1100px) {
+    .audio-projects .audio-projects-wrapper .wrapper .audio-projects-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .audio-project-left {
+            width: 100%;
+            margin: 0 0 30px 0;
+            .audio-project {
+                margin: 0 auto;
+            }
+        }
+        .audio-project-right {
+            width: 100%;
+            .audio-project {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .audio-projects .audio-projects-wrapper .wrapper {
+        width: 90%;
+        .audio-project {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .audio-project-text {
+                text-align: center;
+            }
+        }
+    }
+}
