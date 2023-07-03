@@ -88,10 +88,11 @@
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
    .skills .skills-wrapper .wrapper .text-container .skills-list-container .skills-list {
         display: flex;
         flex-direction: column;
+        height: calc(105% - 1.5rem);
     }
     .skills .skills-wrapper .wrapper {
         width: 90%;

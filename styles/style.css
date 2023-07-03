@@ -736,7 +736,7 @@ nav ul {
   overflow: hidden;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
   .skills .skills-wrapper .wrapper .text-container .skills-list-container .skills-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -745,6 +745,7 @@ nav ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: calc(105% - 1.5rem);
   }
   .skills .skills-wrapper .wrapper {
     width: 90%;
