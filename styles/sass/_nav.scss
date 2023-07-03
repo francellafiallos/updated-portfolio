@@ -2,7 +2,8 @@
 
 nav {
     display: flex;
-    width: 100%;
+    width: 100vw;
+    max-width: 60vw;
     border-bottom: 2px solid v.$primary-color;
     ul {
         display: flex;
@@ -50,18 +51,6 @@ nav {
     }
 }
 
-// @media (max-width: 1024px) {
-//     nav,
-//     nav ul {
-//         display: flex;
-//         flex-direction: column;
-//     }
-
-//     .menu-item {
-//         display: none;
-//     }
-// }
-
 @media (max-width: 1024px) {
     .header-wrapper .nav-wrapper .wrapper .nav-container .nav-items {
         display: flex;
@@ -74,6 +63,8 @@ nav {
     .header-wrapper .nav-wrapper .wrapper .nav-container .nav-items .menu {
         display: flex;
         align-items: flex-start;
+        width: 100vw;
+        max-width: 60vw;
     }
 }
 

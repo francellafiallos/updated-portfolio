@@ -433,7 +433,8 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 100vw;
+  max-width: 60vw;
   border-bottom: 2px solid #4300f9;
 }
 nav ul {
@@ -518,11 +519,13 @@ nav .nav-icon {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    width: 100vw;
+    max-width: 60vw;
   }
 }
 @media (max-width: 1024px) {
   nav,
-  nav ul {
+nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -565,12 +568,12 @@ nav .nav-icon {
 }
 @media (max-width: 1024px) {
   .nav-icon a,
-  .nav-items a {
+.nav-items a {
     position: relative;
     color: black;
   }
   .nav-icon a::before,
-  .nav-items a::before {
+.nav-items a::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -589,9 +592,9 @@ nav .nav-icon {
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   }
   .nav-items a:hover::before,
-  .nav-icon a:hover::before,
-  .nav-items a:focus,
-  .nav-icon a:focus {
+.nav-icon a:hover::before,
+.nav-items a:focus,
+.nav-icon a:focus {
     -webkit-transform-origin: left;
             transform-origin: left;
     -webkit-transform: scaleX(1);
@@ -845,7 +848,7 @@ nav .nav-icon {
             flex-direction: column;
   }
   .block-wrapper .project-block-one,
-  .block-wrapper .project-block-two {
+.block-wrapper .project-block-two {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -856,11 +859,11 @@ nav .nav-icon {
     row-gap: 60px;
   }
   .block-wrapper .project-block-one .project-block,
-  .block-wrapper .project-block-two .project-block {
+.block-wrapper .project-block-two .project-block {
     width: 100%;
   }
   .block-wrapper .project-block-one .project-block .image,
-  .block-wrapper .project-block-two .project-block .image {
+.block-wrapper .project-block-two .project-block .image {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -870,15 +873,15 @@ nav .nav-icon {
             justify-content: center;
   }
   .block-wrapper .project-block-one .project-block .image img,
-  .block-wrapper .project-block-two .project-block .image img {
+.block-wrapper .project-block-two .project-block .image img {
     width: 300px;
   }
   .block-wrapper .project-block-one .project-block .text-button-container,
-  .block-wrapper .project-block-two .project-block .text-button-container {
+.block-wrapper .project-block-two .project-block .text-button-container {
     text-align: center;
   }
   .block-wrapper .project-block-one .project-block .text-button-container .button-container,
-  .block-wrapper .project-block-two .project-block .text-button-container .button-container {
+.block-wrapper .project-block-two .project-block .text-button-container .button-container {
     width: 50%;
     margin: 0 auto;
   }
@@ -900,7 +903,7 @@ nav .nav-icon {
 }
 @media (max-width: 960px) {
   .projects .projects-wrapper .wrapper .block-wrapper .project-block-left,
-  .projects .projects-wrapper .wrapper .block-wrapper .project-block-right {
+.projects .projects-wrapper .wrapper .block-wrapper .project-block-right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
